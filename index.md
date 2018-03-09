@@ -144,11 +144,22 @@ To display the list of commits to be push to remote repo,
 	git checrry -v
 ```
 
+## Branching Mechanism
 
 ```
-git checkout
-git branch
-git merge
+git branch		# display the branch in use
+git branch -a		# display list of branches 
+git merge  		# merge two branches
+git checkout develop	# switch the branch to develop
+git checkout -b develop master	# create a branch'develop' from 'master' branch
 ```
 
-Branching Mechanism:
+
+When you are trying to merge from develop to master branch as below
+develop -> master
+source -> destination
+
+```
+git checkout master
+git merge develop
+```
