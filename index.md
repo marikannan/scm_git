@@ -51,5 +51,31 @@ There three phases in git.
 ## Remote Repo
 `git push` is used to push the changes to the distributed repository.
 ```
-git push
+- git push 
+- git push -u origin master
+```
+
+To get remote repo details,
+```
+- git remote -v
+```
+
+To rename remote repo name,
+```
+- git remote rename origin destination
+- git remote -v
+```
+
+## Some git repo stuff
+To initialize git repo locally,
+```
+- git init 
+```
+To add remote repo for local repo,
+```
+- git remote add origin <url>
+```
+To push the current branch and set the remote as upstream,
+```
+- git push --set-upstream origin master
 ```
