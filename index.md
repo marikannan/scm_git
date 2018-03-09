@@ -42,7 +42,7 @@ There three phases in git.
 ```bash
 	git commit  			# this will open an editor to give commit message
 	git commit -m "reason"	# -m used to give commit message in CLI itself
-	git status			# will give info about files are in statging area,local repo, remote repo
+	git status		# will give info about files are in statging area,local repo, remote repo
 				# Untracked files - which are not yet added to staging
 				# Changes to be committed - which are in staging area
 	git log
@@ -55,31 +55,31 @@ There three phases in git.
 	git push -u origin master
 ```
 
-To get remote repo details,
+* To get remote repo details,
 ```bash
 	git remote -v
 ```
 
-To rename remote repo name,
+* To rename remote repo name,
 ```bash
 	git remote rename origin destination
 	git remote -v
 ```
 
 ## Some git repo stuff
-To initialize git repo locally,
+* To initialize git repo locally,
 ```bash
 	git init 
 ```
-To add remote repo for local repo,
+* To add remote repo for local repo,
 ```bash
 	git remote add origin <url>
 ```
-To push the current branch and set the remote as upstream,
+* To push the current branch and set the remote as upstream,
 ```bash
 	git push --set-upstream origin master
 ```
-To pull the recent content from remote repo,
+* To pull the recent content from remote repo,
 ```bash
 	git pull origin master
 ```
