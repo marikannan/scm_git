@@ -1,12 +1,12 @@
 Quick Notes of using git and github.
 
-# List Config
+## List Config
 To list configuration details,
 ```bash
 	git config --list
 ```
 
-# Set Config ( global ) 
+## Set Config ( global ) 
 To set configuration parameters globally ie. to use for all repositories.
 ```bash
 	git config --global user.name "<username>"
@@ -18,17 +18,17 @@ To set configuration parameters for a specific repository,
 	git config user.email "<email address>"
 ```
 
-# Get local copy
+## Get local copy
 To get local copy of a repository from distributed server, 
 ```bash
 	git clone <github-url>
 ```
 
-# Publish changes
+## Publish changes
 
 There three phases in git.
 
-## Staging area ( buffer )
+### Staging area ( buffer )
 `git add` command is used to add the modified or new files/folders to the staging area. Note that `git add` will not give any output
 ```bash
 	git add <filename>
@@ -37,7 +37,7 @@ There three phases in git.
 	git status
 ```
 
-## Local Repo:
+### Local Repo:
  `git commit` is used to add to local repository. While commiting the files, SHA-1 key will be generated for every commit.
 ```bash
 	git commit  			# this will open an editor to give commit message
@@ -48,7 +48,7 @@ There three phases in git.
 	git log
 ```
 
-## Remote Repo
+### Remote Repo
 `git push` is used to push the changes to the distributed repository.
 ```bash
 	git push 
@@ -138,3 +138,17 @@ Other useful reset commands,
 	git log 					# shows the log information
 	git log --graph --oneline --decorate --all 	# display bit of graph
 ```
+
+To display the list of commits to be push to remote repo,
+```
+	git checrry -v
+```
+
+
+```
+git checkout
+git branch
+git merge
+```
+
+Branching Mechanism:
