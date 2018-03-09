@@ -87,18 +87,19 @@ To pull the recent content from remote repo,
 ## Advance git commands
 To remove Untracked files,
 ```
-	git clean -f 	# clean the files
-	git clean -fd	# clean file and directory
+	git clean -f 	# clean the files. -f option for forceful
+	git clean -fd	# clean file and directory. -f option for forceful
 ```
 To remove files which are in Staging area,
 ```
-	git reset --hard
+	git reset --hard 	# changes made after the commit are discarded. It resets index and working tree.
 ```
 To get previous revision,
 ```
 	git checkout <filename>	
 ```
 
+To get back past commit changes,
 ```
 	git revert <commit-id-taken-from-log>
 ```
@@ -120,4 +121,13 @@ git staus
 git stash -p 	# dsiplay the chunks of changes which are stashed
 git stash list
 git stash apply
+```
+
+Other useful reset commands,
+```
+git reset --hard 	# changes made after the commit are discarded.
+git reset --soft 	# changes made after the commit are moved to "staged for commit" stage.
+			# you can run git commit command to add files back to repo.
+
+git reset 		# changes made after commit are moved to "not yet staged for commit" stage
 ```
