@@ -46,6 +46,7 @@ There three phases in git.
 - git commit -m "reason"
 - git status
 - git log
+```
 
 ## Remote Repo
 `git push` is used to push the changes to the distributed repository.
