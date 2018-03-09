@@ -162,3 +162,47 @@ source -> destination
 	git checkout master
 	git merge develop
 ```
+
+To create an alias,
+```
+git config --global alias.XZ
+
+To generate some reports of repo changes, history and logs
+```
+git for-each-ref 
+```
+
+To see the contents from other branch
+```
+git show some-branch:file.js
+```
+
+To list files with status,
+```
+git status -s
+```
+
+To select part of changes
+```
+git add -p
+```
+
+To pick some changes from a commit and apply it here
+```
+	git cherry-pick <commitSHA>
+```
+
+Pull and merge can be done together using rebase
+```
+	git rebase
+```
+
+
+git log options,
+	- author="..."
+	- name-only
+	- oneline
+	- graph
+	- reverse
+	- after
+	- before
