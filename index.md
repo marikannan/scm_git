@@ -43,7 +43,7 @@ There three phases in git.
 	git commit  			# this will open an editor to give commit message
 	git commit -m "reason"	# -m used to give commit message in CLI itself
 	git status		# will give info about files are in statging area,local repo, remote repo
-				# Untracked files - which are not yet added to staging
+				# Untracked files - which are yet to add to staging
 				# Changes to be committed - which are in staging area
 	git log
 ```
@@ -82,4 +82,42 @@ To push the current branch and set the remote as upstream,
 To pull the recent content from remote repo,
 ```bash
 	git pull origin master
+```
+
+## Advance git commands
+To remove Untracked files,
+```
+	git clean -f 	# clean the files
+	git clean -fd	# clean file and directory
+```
+To remove files which are in Staging area,
+```
+	git reset --hard
+```
+To get previous revision,
+```
+	git checkout <filename>	
+```
+
+```
+	git revert <commit-id-taken-from-log>
+```
+
+To push the changes forcefully,
+```
+	git push -f 
+```
+
+To commit recent changes in a file which are already committed
+```
+git commit --amend 
+```
+
+If we don't want file ( which had some modifications) and keep it for sometime, we can make use of stash command. The stash content will be stored in stACKing area
+```
+git stash
+git staus
+git stash -p 	# dsiplay the chunks of changes which are stashed
+git stash list
+git stash apply
 ```
