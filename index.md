@@ -12,8 +12,6 @@ To set configuration parameters globally ie. to use for all repositories.
 	git config --global user.name "<username>"
 	git config --global user.email "<email address>"
 ```
-
-# Set Config ( specific repo ) 
 To set configuration parameters for a specific repository,
 ```
 	git config user.name "<username>"
