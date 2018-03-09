@@ -42,9 +42,11 @@ There three phases in git.
 ## Local Repo:
  `git commit` is used to add to local repository. While commiting the files, SHA-1 key will be generated for every commit.
 ```
-- git commit
-- git commit -m "reason"
-- git status
+- git commit  			# this will open an editor to give commit message
+- git commit -m "reason"	# -m used to give commit message in CLI itself
+- git status			# will give info about files are in statging area,local repo, remote repo
+				# Untracked files - which are not yet added to staging
+				# Changes to be committed - which are in staging area
 - git log
 ```
 
@@ -78,4 +80,8 @@ To add remote repo for local repo,
 To push the current branch and set the remote as upstream,
 ```
 - git push --set-upstream origin master
+```
+To pull the recent content from remote repo,
+```
+- git pull origin master
 ```
