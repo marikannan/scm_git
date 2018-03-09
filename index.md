@@ -1,4 +1,4 @@
-Quick Notes for use of git and github.
+Quick Notes of using git and github.
 
 # List Config
 To list configuration details,
@@ -111,23 +111,30 @@ To push the changes forcefully,
 
 To commit recent changes in a file which are already committed
 ```
-git commit --amend 
+	git commit --amend 
 ```
 
 If we don't want file ( which had some modifications) and keep it for sometime, we can make use of stash command. The stash content will be stored in stACKing area
 ```
-git stash
-git staus
-git stash -p 	# dsiplay the chunks of changes which are stashed
-git stash list
-git stash apply
+	git stash
+	git staus
+	git stash -p 	# dsiplay the chunks of changes which are stashed
+	git stash list
+	git stash apply
 ```
 
 Other useful reset commands,
 ```
-git reset --hard 	# changes made after the commit are discarded.
-git reset --soft 	# changes made after the commit are moved to "staged for commit" stage.
-			# you can run git commit command to add files back to repo.
+	git reset --hard 	# changes made after the commit are discarded.
+	git reset --soft 	# changes made after the commit are moved to "staged for commit" stage.
+				# you can run git commit command to add files back to repo.
+	git reset 		# changes made after commit are moved to "not yet staged for commit" stage
+```
 
-git reset 		# changes made after commit are moved to "not yet staged for commit" stage
+## To display log
+`git` supports both text based and graph based log histroy,
+
+``` 
+	git log 					# shows the log information
+	git log --graph --oneline --decorate --all 	# display bit of graph
 ```
