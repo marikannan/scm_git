@@ -165,27 +165,27 @@ source -> destination
 
 To create an alias,
 ```
-git config --global alias.XZ
+	git config --global alias.XZ
 ```
 
 To generate some reports of repo changes, history and logs
 ```
-git for-each-ref 
+	git for-each-ref 
 ```
 
 To see the contents from other branch
 ```
-git show some-branch:file.js
+	git show some-branch:file.js
 ```
 
 To list files with status,
 ```
-git status -s
+	git status -s
 ```
 
 To select part of changes
 ```
-git add -p
+	git add -p
 ```
 
 To pick some changes from a commit and apply it here
