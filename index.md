@@ -166,6 +166,7 @@ source -> destination
 To create an alias,
 ```
 git config --global alias.XZ
+```
 
 To generate some reports of repo changes, history and logs
 ```
@@ -197,7 +198,7 @@ Pull and merge can be done together using rebase
 	git rebase
 ```
 
-
+```
 git log options,
 	- author="..."
 	- name-only
@@ -206,3 +207,4 @@ git log options,
 	- reverse
 	- after
 	- before
+```
